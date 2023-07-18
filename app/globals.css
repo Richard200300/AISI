@@ -92,22 +92,30 @@ color: #ffff;
   border-left: 1px solid #fff;
 padding-block: 20px;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 .miniheaderimgcont {
 position: relative;
+height: 82vh;
+
+
 }
+
 .collab-img-text {
-  position: absolute;
   font-weight: 600;
   font-size: 12px;
-  bottom: 5px;
-  right: 35px;
+  margin-top: 4px;
+  position: absolute;
+  right: 7%;
+  margin-left: auto;
 }
 .headerimg{
-  margin-block: 20px;
-  object-fit: contain;
   height: 82vh;
+  object-fit: contain;
+  
 }
 .header-body {
 height: 92vh;;

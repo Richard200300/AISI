@@ -6,6 +6,7 @@ const page = () => {
     <section className="mainpage">
       <div className="page">
       <Header />
+      <Header />
 
       </div>
       </section>

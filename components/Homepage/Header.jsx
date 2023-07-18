@@ -59,7 +59,9 @@ const Header = () => {
             </p>
           </div>
           <div className="textimgcont">
-            <p className="ucase collab-text">[ aisi x nike ]</p>
+            <p className="ucase collab-text">
+              <em>[ aisi x nike ]</em>
+            </p>
             <Image src={headernike} alt="headernike" />
           </div>
           <div className="flex atc gp10 shopnowcont">
@@ -69,9 +71,13 @@ const Header = () => {
         </article>
         <article className="headerimgcont flex jcc atc">
           <div className="miniheaderimgcont">
-            <Image src={headerimg} alt="headerimg" className="headerimg" />
+            <div className="headersmcont">
+              <Image src={headerimg} alt="headerimg" className="headerimg" />
 
-            <p className="ucase collab-img-text">[ aisi x carhatt ]</p>
+              <p className="ucase collab-img-text">
+                <em>[ aisi x carhatt ]</em>
+              </p>
+            </div>
           </div>
         </article>
       </section>
