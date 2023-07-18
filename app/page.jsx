@@ -1,13 +1,14 @@
 
 import Header from "@/components/Homepage/Header"
+import Head from "next/head"
 const page = () => {
   return (
-    <div className="mainpage">
+    <section className="mainpage">
       <div className="page">
       <Header />
 
       </div>
-      </div>
+      </section>
   )
 }
 

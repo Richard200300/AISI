@@ -62,6 +62,8 @@
   font-weight: 400;
   line-height: 64px;
   letter-spacing: 0px;
+  position: absolute;
+  top: 12%;
 }
 .header-mid-text {
   position: relative;
@@ -75,8 +77,14 @@ margin-right: 6px;
   flex-basis: 47%;
 }
 .headerMaintext {
-  width: 403px;
-
+  width: 380px;
+font-size: 11px;
+font-weight: 400;
+line-height: 20px;
+position: absolute;
+right: 20px;
+top: 48%;
+color: #ffff;
 }
 
 .headerimgcont {
@@ -111,7 +119,7 @@ border-bottom: 1px solid #fff;
   padding: 12px 36px;
   border: 1px solid #fff;
   position: absolute;
-  bottom: 27px;
+  bottom:30px;
   right: 30px;
   text-align: center;
   text-transform: uppercase;

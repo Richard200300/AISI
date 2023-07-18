@@ -3,7 +3,7 @@ import aisiLogo from "../../public/assets/icons/dark.svg";
 import headerdown from "../../public/assets/icons/headerdown.svg";
 import headerHeart from "../../public/assets/icons/headerHeart.svg";
 import headercart from "../../public/assets/icons/headercart.svg";
-import leftarrow from "../../public/assets/icons/leftarrow.svg"
+import leftarrow from "../../public/assets/icons/leftarrow.svg";
 import headerimg from "../../public/assets/images/headerimg.png";
 import headernike from "../../public/assets/images/headernike.png";
 
@@ -60,22 +60,19 @@ const Header = () => {
           </div>
           <div className="textimgcont">
             <p className="ucase collab-text">[ aisi x nike ]</p>
-              <Image src={headernike} alt="headernike" />
-            </div>
-            <div className="flex atc gp10 shopnowcont">
-                <p>shop now</p>
-                <Image src={leftarrow} alt="leftarrow" />
-
-            </div>
+            <Image src={headernike} alt="headernike" />
+          </div>
+          <div className="flex atc gp10 shopnowcont">
+            <p>shop now</p>
+            <Image src={leftarrow} alt="leftarrow" />
+          </div>
         </article>
         <article className="headerimgcont flex jcc atc">
-            <div className="miniheaderimgcont">
-          <Image src={headerimg} alt="headerimg" className="headerimg" />
+          <div className="miniheaderimgcont">
+            <Image src={headerimg} alt="headerimg" className="headerimg" />
 
             <p className="ucase collab-img-text">[ aisi x carhatt ]</p>
-
-            </div>
-
+          </div>
         </article>
       </section>
     </section>
