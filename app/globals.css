@@ -31,6 +31,8 @@ width: 100%;
 .ucase {
   text-transform: uppercase;
 }
+
+
 .header {
   height: 100vh;
 }
@@ -181,7 +183,7 @@ height: 82vh;
   font-size: 12px;
   margin-top: 4px;
   position: absolute;
-  right: 7%;
+  right: 12px;
   margin-left: auto;
 }
 .headerimg{
@@ -214,4 +216,89 @@ border-bottom: 1px solid #fff;
   margin-block: 10px;
   font-size: 12px;
   font-weight: 600;
+}
+.footer {
+  text-transform: uppercase;
+  border-top: 1px solid white
+}
+.footer-input {
+  color: black;
+}
+.footer-sub-text {
+  line-height: 32px;
+  font-size: 20px;
+  font-weight: 400;
+  width: 36vw;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr;
+}
+.footer-agreebtn {
+  border-left: 1px solid white;
+  position: relative;
+  padding:40px 0px;
+  font-weight: 600;
+padding-left: 15px;
+
+}
+.footer-email {
+  border-left: 1px solid white;
+  position: relative;
+  font-weight: 600;
+padding-left: 15px;
+}
+.footer-email input {
+ position: absolute;
+ bottom: 5px;
+ width: 70%;
+ padding: 5px 10px;
+ outline: none;
+}
+.footer-agreebtn p {
+  position: absolute;
+  font-size: 12px;
+  bottom: 5px;
+
+}
+.footer-main {
+  display: grid;
+  grid-template-columns:0.9056fr 0.9fr 1fr 1fr ;
+}
+.footer-main div {
+  border-right: 1px solid white;
+  border-block: 1px solid white;
+  height: 50vh;
+  padding:15px ;
+  position: relative;
+  
+}
+.footer-main div:nth-of-type(4) {
+  border-right: none;
+}
+.social-media-text {
+  font-style: 400;
+  font-size: 12px;
+  line-height: 15.5px;
+  position: absolute;
+  top: 38%;
+}
+.f12 {
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  top: 37%;
+}
+.footer-list {
+  list-style-type: none;
+  font-weight: 600;
+  
+  line-height: 20px;
+  position: absolute;
+  bottom: 10px;
+}
+.footer-list li {
+  padding-block: 2px;
+  font-size: 15px;
+  margin-block: 5px;
 }
