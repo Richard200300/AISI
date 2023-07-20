@@ -113,7 +113,9 @@ right: 20px;
 top: 48%;
 color: #ffff;
 }
-
+.explore-cont {
+  position: relative;
+}
 .headerimgcont {
   flex-basis: 53%;
   border-left: 1px solid #fff;
@@ -130,7 +132,45 @@ height: 82vh;
 
 
 }
+.explore-hidden {
+  position: absolute;
+  top: 70px;
+  right: 18px;
+  z-index: 1;
+  background-color: black;
+  border:2px dashed #9747ff;
+  border-radius: 10px;
+  padding: 1px 10px;
+  text-align: justify;
+  font-size: 10px;
+  font-weight: 500;
+  width:  10vw;
+} 
+.explore-hidden div {
+  margin-block: 15px;
+  cursor: pointer;
+}
+.uparrow {
+  transform: rotate(180deg);
+  transition: all 0.3s;
+}
+.downarrow {
+  transition: all 0.3s;
 
+}
+.showexplore {
+  opacity: 1;
+  transition: all 0.3s;
+top: 0px;
+position: unset;
+}
+.hideexplore {
+  transition: all 0.3s;
+  position: absolute;
+  right: 0px;
+  top: 50px;
+  opacity: 0;
+}
 .collab-img-text {
   font-weight: 600;
   font-size: 12px;

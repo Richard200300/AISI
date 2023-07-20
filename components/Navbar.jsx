@@ -1,11 +1,15 @@
+"use client"
 import Image from "next/image";
+import {useState} from "react"
 import global from "../public/assets/icons/globalscope.svg";
+import leftarrowup from "../public/assets/icons/leftarrowup.svg"
 import headerdown from "../public/assets/icons/headerdown.svg";
 import aisiLogo from "../public/assets/icons/dark.svg";
 import headerHeart from "../public/assets/icons/headerHeart.svg";
 import headercart from "../public/assets/icons/headercart.svg";
 import flag from "../public/assets/icons/flag.svg";
 const Navbar = () => {
+  const [showexplore, setShowexplore] = useState(false)
   return (
     <div className="main-nav">
       <div className="navbar flex gp30">
@@ -32,9 +36,28 @@ const Navbar = () => {
           <div className="header-nav-box">
             <p>Shop</p>
           </div>
-          <div className="flex atc header-nav-box hnb-flex">
+          <div className="flex atc header-nav-box explore-cont hnb-flex">
+            <div className="flex atc hnb-flex" onClick={()=> {
+              setShowexplore(prevexplore => !prevexplore)
+            }}>
             <p>Explore</p>
-            <Image src={headerdown} alt="headerdown" className="pointer" />
+            <Image src={headerdown} alt="headerdown" className={showexplore ? "uparrow" : "downarrow"} />
+            </div>
+            
+            <div className={showexplore ? "showexplore": "hideexplore"}>
+            <div className="explore-hidden">
+              <article>
+                <div className="flex jcsb atc"><p>Brand</p>
+                <Image src={leftarrowup} alt="leftarrowup" />
+                </div>
+                <div className="flex jcsb atc"><p>Stores</p>
+                <Image src={leftarrowup} alt="leftarrowup" /></div>
+                <div className="flex jcsb atc"><p>collections</p>
+                <Image src={leftarrowup} alt="leftarrowup" /></div> 
+              </article>
+            </div>
+            </div>
+            
           </div>
         </article>
         <Image src={aisiLogo} alt="aisiLogo" className="pointer" />
