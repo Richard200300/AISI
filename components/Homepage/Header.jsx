@@ -11,30 +11,7 @@ const Header = () => {
   return (
     <section className="header">
       {/* Header nav */}
-      <section className="flex jcsb atc header-nav">
-        <article className="flex atc">
-          <div className="header-nav-box">
-            <p>Shop</p>
-          </div>
-          <div className="flex atc header-nav-box hnb-flex">
-            <p>Explore</p>
-            <Image src={headerdown} alt="headerdown" className="pointer" />
-          </div>
-        </article>
-        <Image src={aisiLogo} alt="aisiLogo" className="pointer" />
-        <article className="flex atc">
-          <div className="flex atc header-nav-box hnb-flex">
-            <Image src={headerHeart} alt="headerHeart" className="pointer" />
-            <p>Wishlist</p>
-            <p>(0)</p>
-          </div>
-          <div className="flex atc header-nav-box hnb-flex">
-            <Image src={headercart} alt="headercart" className="pointer" />
-            <p>cart</p>
-            <p>(0)</p>
-          </div>
-        </article>
-      </section>
+ 
       {/* Header body  */}
       <section className="flex jcsb header-body">
         <article className="headertextcont">
