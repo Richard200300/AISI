@@ -1,29 +1,39 @@
 import aisiLogo from "../public/assets/icons/dark.svg";
 import Image from "next/image";
+import footerimg from "../public/assets/images/footerimg.png"
 
 const Footer = () => {
   return (
     <section className="footer">
       <div className="wrapper">
-        <p className="footer-sub-text">
-          /subscribe to our newsletter & be the first to hear about new products
-          & events
-        </p>
+        <div className=""></div>
+        
         <div className="footer-email">
-          <input
+         
+        </div>
+       
+      </div>
+      <article className="footer-main">
+      
+        <article className="footer-sub-text-container" >
+          <p className="footer-sub-text">
+          /subscribe to our newsletter & be the first to hear about new products & events
+
+          </p>
+        </article>
+        <article></article>
+        <article className="footer-email">
+        <input
             type="email"
             placeholder="ENTER YOUR EMAIL ADDRESS"
             className="footer-input"
           />
-        </div>
-        <div className="footer-agreebtn">
-          <p>agree & subscribe</p>
-        </div>
-      </div>
-      <article className="footer-main">
+        </article>
+        <article className="footer-agreebtn">
+        <p>agree & subscribe</p>
+        </article>
         <div>
-          /subscribe to our newsletter & be the first to hear about new products
-          & events
+          <Image src={footerimg} alt="footerimg"  className="footerimg"/>
         </div>
         <div>
           <Image src={aisiLogo} alt="aisiLogo" />
